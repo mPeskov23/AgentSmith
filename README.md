@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by mikhail.*
+*This project has been created as part of the 42 curriculum by yemirosh, rolorenz, mpeskov.*
 
 # Agent Smith: Autonomous Reasoning, Code Generation, and Execution
 
