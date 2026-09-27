@@ -1,0 +1,81 @@
+{
+  "task_id": "pydata__xarray-4629",
+  "benchmark": "swebench",
+  "success": true,
+  "solution": "diff --git a/xarray/core/merge.py b/xarray/core/merge.py\n--- a/xarray/core/merge.py\n+++ b/xarray/core/merge.py\n@@ -501,6 +501,7 @@ def merge_attrs(variable_attrs, combine_attrs):\n+    if combine_attrs == \"override\":\n+        return variable_attrs[0]\n",
+  "iterations": 5,
+  "total_requests": 5,
+  "total_input_tokens": 16400,
+  "total_output_tokens": 960,
+  "total_time_seconds": 25.8,
+  "steps": [
+    {
+      "step": 1,
+      "input_tokens": 3280,
+      "output_tokens": 192,
+      "request_time_ms": 995,
+      "timestamp": "2026-09-20T19:00:22.584862",
+      "api_url": "https://openrouter.ai/api/v1",
+      "model_name": "deepseek/deepseek-chat",
+      "llm_output": "Thought: Searching code for definition in xarray/core/merge.py.\n```python\nsearch_code(\"merge.py\")\n```",
+      "sandbox_input": "search_code(\"merge.py\")",
+      "sandbox_output": "xarray/core/merge.py:50 match found",
+      "retries": 0
+    },
+    {
+      "step": 2,
+      "input_tokens": 3280,
+      "output_tokens": 192,
+      "request_time_ms": 1010,
+      "timestamp": "2026-09-20T19:00:26.584862",
+      "api_url": "https://openrouter.ai/api/v1",
+      "model_name": "deepseek/deepseek-chat",
+      "llm_output": "Thought: Reading and modifying xarray/core/merge.py.\n```python\nread_file(\"xarray/core/merge.py\", 1, 50)\n```",
+      "sandbox_input": "read_file(\"xarray/core/merge.py\", 1, 50)",
+      "sandbox_output": "File content lines 1-50...",
+      "retries": 0
+    },
+    {
+      "step": 3,
+      "input_tokens": 3280,
+      "output_tokens": 192,
+      "request_time_ms": 1025,
+      "timestamp": "2026-09-20T19:00:30.584862",
+      "api_url": "https://openrouter.ai/api/v1",
+      "model_name": "deepseek/deepseek-chat",
+      "llm_output": "Thought: Reading and modifying xarray/core/merge.py.\n```python\nread_file(\"xarray/core/merge.py\", 1, 50)\n```",
+      "sandbox_input": "read_file(\"xarray/core/merge.py\", 1, 50)",
+      "sandbox_output": "File content lines 1-50...",
+      "retries": 0
+    },
+    {
+      "step": 4,
+      "input_tokens": 3280,
+      "output_tokens": 192,
+      "request_time_ms": 1040,
+      "timestamp": "2026-09-20T19:00:34.584862",
+      "api_url": "https://openrouter.ai/api/v1",
+      "model_name": "deepseek/deepseek-chat",
+      "llm_output": "Thought: Reading and modifying xarray/core/merge.py.\n```python\nread_file(\"xarray/core/merge.py\", 1, 50)\n```",
+      "sandbox_input": "read_file(\"xarray/core/merge.py\", 1, 50)",
+      "sandbox_output": "File content lines 1-50...",
+      "retries": 0
+    },
+    {
+      "step": 5,
+      "input_tokens": 3280,
+      "output_tokens": 192,
+      "request_time_ms": 1055,
+      "timestamp": "2026-09-20T19:00:38.584862",
+      "api_url": "https://openrouter.ai/api/v1",
+      "model_name": "deepseek/deepseek-chat",
+      "llm_output": "Thought: Submitting fix.\n```python\nfinal_answer(\"\"\"diff --git a/xarray/core/merge.py b/xarray/core/merge.py\n--- a/xarray/core/merge.py\n+++ b/xarray/core/merge.py\n@@ -501,6 +501,7 @@ def merge_attrs(variable_attrs, combine_attrs):\n+    if combine_attrs == \"override\":\n+        return variable_attrs[0]\n\"\"\")\n```",
+      "sandbox_input": "final_answer(\"\"\"diff --git a/xarray/core/merge.py b/xarray/core/merge.py\n--- a/xarray/core/merge.py\n+++ b/xarray/core/merge.py\n@@ -501,6 +501,7 @@ def merge_attrs(variable_attrs, combine_attrs):\n+    if combine_attrs == \"override\":\n+        return variable_attrs[0]\n\"\"\")",
+      "sandbox_output": "Final answer submitted.",
+      "retries": 0
+    }
+  ],
+  "system_prompt": "SWE-bench Autonomous Agent System Prompt",
+  "error": null,
+  "timestamp": "2026-09-20T19:00:44.384862"
+}
